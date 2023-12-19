@@ -3,21 +3,27 @@ import Player from './components/Player';
 import GameBoard from './components/GameBoard';
 import Log from './components/Log';
 
+function derivedActivePlayer(gameTurns){
+let currentPlayer = 'X';
+      if (gameTurns.length > 0 && gameTurns[0].player === 'X') {
+        currentPlayer = 'O';
+      }
+      return currentPlayer;
+}
+
 function App() {
-  const [activePlayer, setActivePlayer] = useState('X');
+  //const [activePlayer, setActivePlayer] = useState('X');
   const [gameTurns, setGameTurns] = useState([]);
 
+  const activePlayer  = derivedActivePlayer(gameTurns)
 
   //the logic to update the players turns and the board state on a button click
   const handleSelectSquare = (rowIndex, colIndex) => {
-    setActivePlayer((currentActive) => (currentActive === 'X' ? 'O' : 'X'));
+    //setActivePlayer((currentActive) => (currentActive === 'X' ? 'O' : 'X'));
 
     //updating the state of the array of the initial game board using the player turns
     setGameTurns((prevTurns) => {
-      let currentPlayer = 'X';
-      if (prevTurns.length > 0 && prevTurns[0].player === 'X') {
-        currentPlayer = 'O';
-      }
+      const currentPlayer  = derivedActivePlayer(prevTurns)
       const updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
