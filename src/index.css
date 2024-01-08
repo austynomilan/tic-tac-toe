@@ -365,10 +365,8 @@ ol {
   border-radius: 4px;
   }
   #players {
-    gap: 2rem;
+    gap: 4rem;
     margin: .5rem auto;
-    padding: 0 3.2rem 0 0;
-    justify-content: space-between;
   }
   #players li {
     width: 35%;
