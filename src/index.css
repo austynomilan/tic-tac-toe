@@ -396,8 +396,8 @@ ol {
     font-size: 3rem;
   }
   #game-board button {
-    width: 5rem;
-    height: 5rem;
-    font-size: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
   }
 }
