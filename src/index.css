@@ -365,8 +365,8 @@ ol {
   border-radius: 4px;
   }
   #players {
-    gap: 4rem;
-    margin: .5rem auto;
+    gap: 2.7rem;
+    margin: .5rem -5rem 0;
   }
   #players li {
     width: 35%;
@@ -376,9 +376,6 @@ ol {
     font-size: 0.7rem;
     
   }
-  #players.highlight-player li.active {
-    width: 6.9rem;
-  }
   .player-name {
     width: 6rem;
   font-size: .7rem;
@@ -386,7 +383,7 @@ ol {
   .player {
     display: flex;
     align-items: center;
-    margin: -.3rem;
+   margin: -.3rem;
   }
   .player-symbol {
     font-size: .8rem;
