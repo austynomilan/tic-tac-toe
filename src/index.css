@@ -378,6 +378,9 @@ ol {
     font-size: 0.7rem;
     
   }
+  #players.highlight-player li.active {
+    width: 6.9rem;
+  }
   .player-name {
     width: 6rem;
   font-size: .7rem;
@@ -388,8 +391,8 @@ ol {
     margin: -.3rem;
   }
   .player-symbol {
-    font-size: .7rem;
-    margin-left: .1rem;
+    font-size: .8rem;
+    margin-left: .8rem;
   }
   .player input {
     width: 6rem;
