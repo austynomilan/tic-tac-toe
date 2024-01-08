@@ -365,7 +365,7 @@ ol {
   border-radius: 4px;
   }
   #players {
-    gap: 2.7rem;
+    gap: .1rem;
     margin: .5rem -5rem 0;
   }
   #players li {
